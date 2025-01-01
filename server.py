@@ -23,6 +23,6 @@ if __name__ == '__main__':
         config.add_route('hello', '/')
         config.add_view(hello_world, route_name='hello')
         app = config.make_wsgi_app()
-    server = make_server('0.0.0.0', port, app)
+    server = make_server('0.0.0.0', 8080, app)
     logger.info("starting server")
     server.serve_forever()
