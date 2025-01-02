@@ -1,7 +1,7 @@
 from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 from pyramid.response import Response
-import os, logging
+import os, logging, sys
 
 logging.basicConfig(level=logging.INFO, stream=sys.stdout)
 logger = logging.getLogger(__name__)
