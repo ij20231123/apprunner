@@ -16,8 +16,8 @@ def hello_world(request):
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT"))
-    logger.info(f"running main application and listening on port {os.environ.get("PORT")}")
-    logger.info(f"value of my port {os.environ.get("MY_PORT")}")
+    logger.info(f"running main application and listening on port {os.environ.get('PORT')}")
+    #logger.info(f"value of my port {os.environ.get("MY_PORT")}")
     with Configurator() as config:
         logger.info("configuring apis")
         config.add_route('hello', '/')
